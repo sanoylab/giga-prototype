@@ -4,7 +4,7 @@ A Vanilla JavaScript Project Connect Clone
 
 DEMO: https://wonderful-hawking-e64c2b.netlify.app/
 
-![alt text](https://raw.githubusercontent.com/sanoylab/covid19-tracker/master/screenshot.JPG)
+![alt text](https://raw.githubusercontent.com/sanoylab/giga-prototype/master/screenshot.PNG)
 
 
 
