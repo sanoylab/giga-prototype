@@ -58,7 +58,7 @@
 
 
             for (let i = 0; i <= data.length; i++) {
-                if (data[i] != undefined) {
+                if (data[i] != undefined && data[i].code != '' && data[i].code != undefined) {
                     let responseCountryName = await fetch(`https://restcountries.eu/rest/v2/alpha/${data[i].code}`);
                     let countryName = await responseCountryName.json();
                     $('#country').append(`
