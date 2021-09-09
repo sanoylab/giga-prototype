@@ -99,7 +99,7 @@
 
 
         let countryDetail = (countryName, countryCode, lat, long) => {
-
+console.log('name', countryName, 'code', countryCode, 'lat', lat, 'long', long)
             apiCountryData(countryCode).then((res) => {
                 let countries_data = res;
 
