@@ -64,7 +64,7 @@
                     let responseCountryName = await fetch(`https://restcountries.eu/rest/v2/alpha/${data[i].code}`);
                     let countryName = await responseCountryName.json();
                     
-                    if(countryName !=undefined && countryName.latlng[0] != undefined && countryName.latlng[1] !=undefined) {
+                    if(countryName !=undefined && countryName.latlng.length != 0) {
                         
                     $('#country').append(`
                <div class="areas">
