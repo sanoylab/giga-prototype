@@ -63,7 +63,7 @@
                     let countryName = await responseCountryName.json();
                     $('#country').append(`
                <div class="areas">
-                        <div id="${data[i]}" class="area" onClick="return countryDetail('${countryName.name}', '${data[i]}', '${countryName.latlng[0]}', '${countryName.latlng[1]}')">
+                        <div id="${data[i].code}" class="area" onClick="return countryDetail('${countryName.name}', '${data[i]}', '${countryName.latlng[0]}', '${countryName.latlng[1]}')">
                         <div class="areaName" title="${countryName.name}">
                             <img src="${countryName.flag}" style="width:30px; height: 30px; border-radius: 50%;"><span>${countryName.name}</span></div>
                             <div class="areaTotal">
