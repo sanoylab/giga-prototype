@@ -63,6 +63,9 @@
                 if (data[i] != undefined && data[i].code != '' && data[i].code != undefined) {
                     let responseCountryName = await fetch(`https://restcountries.eu/rest/v2/alpha/${data[i].code}`);
                     let countryName = await responseCountryName.json();
+                    
+                    if(countryName !=undefined) {
+                        
                     $('#country').append(`
                <div class="areas">
                         <div id="${data[i].code}" class="area" onClick="return countryDetail('${countryName.name}', '${data[i]}', '${countryName.latlng[0]}', '${countryName.latlng[1]}')">
@@ -74,6 +77,7 @@
                         </div>
                </div>`);
                     countryCoordinate.push({ long: countryName.latlng[1], lat: countryName.latlng[0] })
+                    }
                 }
 
 
